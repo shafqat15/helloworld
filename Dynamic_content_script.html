@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+</head>
+<body>
+ <div> <marquee  style="height:100%;" direction="down" bahavior="alternative" scrollamount="7" > <div  id="sample" style="margin: 20px; width: 100px; padding: 50px; background-color: gold; border: 5px solid black; text-align: center; font-size:20px">Default</div></marquee></div>
+ <!--  <button onclick="flat();"> Flat </button>
+   <button onclick="roundedges();"> Round Edges </button> -->
+ <!-- <marquee>hello world</marquee> -->
+   
+   <script type="text/javascript">
+      function flat() {
+         document.getElementById("sample").style.borderRadius = "0";
+document.getElementById("sample").innerHTML = "Flat Box";
+      }
+      
+      function roundedges() {
+         document.getElementById("sample").style.borderRadius = "50px";
+document.getElementById("sample").innerHTML = "Round Box";
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+<script type="text/javascript">
+var tracker = "sf";
+// var image = document.getElementById("image");
+     //  alert(tracker);
+         
+      function myFunc() {
+
+ var image = document.getElementById("image");
+
+    // alert(image.height);
+ // if (image.src == "images/sunflower.jpg") {
+ if (tracker == "sf") {
+   // alert("if");
+  //  alert(image.style);
+         image.src = "images/star.jpg";
+         image.removeStyle;
+        tracker = "s";
+      } else {
+     // alert("else");
+     // alert(image.src);
+         image.src = "images/sunflower.jpg";
+         tracker = "sf";
+}
+}
+
+   </script>
+</head>
+<body>
+   <img onclick="myFunc();" src="images/sunflower.jpg" id="image" alt="image" style="width: 396px; height: 356px" />
+   <button type="button" onclick="myFunc()"> Change Image </button>
+
+   
+</body>
+</html>
